@@ -9,7 +9,7 @@ import { colors } from '../../../../styles/common';
 /* eslint-disable import/no-commonjs */
 const ethLogo = require('../../../../images/eth-logo.png');
 const bnbLogo = require('../../../../images/bnb-logo.png');
-const oneLogo = require('../../../../images/one-logo.png');
+const oneLogo = require('../../../../images/one-logo.svg');
 /* eslint-enable import/no-commonjs */
 
 const REGULAR_SIZE = 24;
