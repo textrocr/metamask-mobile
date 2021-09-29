@@ -9,6 +9,7 @@ import { colors } from '../../../../styles/common';
 /* eslint-disable import/no-commonjs */
 const ethLogo = require('../../../../images/eth-logo.png');
 const bnbLogo = require('../../../../images/bnb-logo.png');
+const oneLogo = require('../../../../images/one-logo.png');
 /* eslint-enable import/no-commonjs */
 
 const REGULAR_SIZE = 24;
@@ -85,7 +86,7 @@ function TokenIcon({ symbol, icon, medium, big, biggest, style }) {
 		return (
 			<RemoteImage
 				fadeIn
-				source={symbol === 'ETH' ? ethLogo : bnbLogo}
+				source={symbol === 'ETH' ? ethLogo : symbol === 'BNB' ? bnbLogo : oneLogo}
 				style={[
 					styles.icon,
 					medium && styles.iconMedium,
